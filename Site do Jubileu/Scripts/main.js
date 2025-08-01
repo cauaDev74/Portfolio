@@ -13,8 +13,8 @@ botaoL.addEventListener("submit", function logar(){
         return;
     }
     if(senha.lenght < 6){
-        alert('A senha deve possuir algum caracetere: @, ., _');
-        return
+        alert('Senha inválida.');
+        return;
     }
 
     const concluido = document.getElementById("result");
