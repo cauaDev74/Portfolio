@@ -4,15 +4,15 @@ botaoL.addEventListener("submit", function logar(){
     const idade = document.getElementById("idade").value;
     const senha = document.getElementById("senha").value;
 
-    if(nome.lenght < 3 && senha.lenght < 6){
-        alert("Nome e senha deve possuir mais de 3 e 6 caracteres");
+    if(nome.lenght < 3){
+        alert("Nome deve possuir mais de 3 caracteres");
         return;
     }
-    if(idade < 18 && idade > 100){
+    if(idade < 18 || idade > 100){
         alert("Idade deve ser maior que 17 e menor que 100");
         return;
     }
-    if(!senha.lenght < 6){
+    if(senha.lenght < 6){
         alert('A senha deve possuir algum caracetere: @, ., _');
         return
     }
