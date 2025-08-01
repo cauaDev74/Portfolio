@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Site do Jubileu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho">Site do Jubileu!!</header>
+    <div id="cadDiv">
+        <form id="cadastro">
+            <label class="lab">Nome:</label>
+            <input class="inp"
+                    type="text"
+                    id="nome"
+                    placeholder="Insira nome"
+            >
+            <label class="lab">Idade:</label>
+            <input class ="inp"
+                    type="number"
+                    id="idade"
+                    placeholder="Insira idade"
+                    min="18"
+                    max="120"
+            >
+            <label class="lab">Senha:</label>
+            <input class="inp"
+                    type="text"
+                    id="senha"
+                    placeholder="senha"
+            >
+            <button class="but" id="botao">Submit</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
